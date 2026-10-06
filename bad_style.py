@@ -1,15 +1,11 @@
-def greet(name):
-    message = "Hello, " + name
-    print(message)
+def calculate_area(length, width):
+    result = length * width
+    if result > 100:
+        print("Large area!")
+    return result
 
 
-def add_numbers(a, b):
-    return a + b
-
-
-numbers = [1, 2, 3, 4, 5]
-for number in numbers:
-    print(number)
-
-greet("Developer")
-print(add_numbers(10, 20))
+my_length = 10
+my_width = 5
+area = calculate_area(my_length, my_width)
+print(f"The area is: {area}")
